@@ -1,3 +1,0 @@
-Fichiers attendus dans ce dossier :
-
-miniature.jpg  → vignette de la carte « Simplicicar Troyes » sur l'accueil

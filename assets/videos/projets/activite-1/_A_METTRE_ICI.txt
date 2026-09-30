@@ -1,3 +1,0 @@
-Fichiers attendus dans ce dossier :
-
-poster.jpg + apercu.mp4 (3-5 s, sans son) + video.mp4 (ou lien embed dans data.js)

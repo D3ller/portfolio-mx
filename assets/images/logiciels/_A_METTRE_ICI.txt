@@ -1,4 +1,0 @@
-Fichiers attendus dans ce dossier :
-
-davinci-resolve.png, premiere-pro.png, after-effects.png, lightroom.png, photoshop.png, illustrator.png, blender.png
-(logos officiels carrés, PNG ou remplace .png par .svg dans presentation.html)
