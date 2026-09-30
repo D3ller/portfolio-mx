@@ -1,0 +1,4 @@
+Fichiers attendus dans ce dossier :
+
+photos-1.jpg (grande, verticale), photos-2.jpg, photos-3.jpg  → mosaïque de la carte « Réalisations Photos »
+videos.jpg  → image de la carte « Réalisations Vidéos » (16:9)

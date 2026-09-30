@@ -1,0 +1,4 @@
+Fichiers attendus dans ce dossier :
+
+01.jpg … 05.jpg  → une image par étape du process
+(les PHOTOS de l'activité 2 vont dans images\photos\activite-2)

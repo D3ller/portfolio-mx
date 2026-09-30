@@ -1,0 +1,3 @@
+Fichiers attendus dans ce dossier :
+
+01.mp4 … 04.mp4 (vidéos 16:9) + 01.jpg … 04.jpg (vignettes) + 01-apercu.mp4 … (extraits de survol, facultatif)

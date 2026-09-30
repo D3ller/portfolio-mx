@@ -1,0 +1,5 @@
+Fichiers attendus dans ce dossier :
+
+portrait.jpg  — ta photo pour la page Présentation (format portrait 4:5, ~1200 x 1500 px)
+accueil.png   — ta photo DÉTOURÉE (fond transparent) affichée en fond de la carte « Maxence Ballot-Wrobel » de l accueil.
+                 Format vertical, cadrage buste ou plan américain, ~1200 px de haut, moins de 800 Ko.
