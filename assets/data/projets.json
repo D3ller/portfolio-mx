@@ -33,6 +33,40 @@
     "couverture": "photo-01-2.jpg"
   },
   {
+    "slug": "2026-09-2",
+    "titre": "2",
+    "types": [
+      "photo"
+    ],
+    "date": "2026-09-29",
+    "role": "Cadre",
+    "categorie": "Test",
+    "description": "testhdhdhdjfjffjkfjf",
+    "logiciels": [],
+    "embed": "",
+    "personnes": [],
+    "liens": [],
+    "medias": [
+      {
+        "nom": "photo-01.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-02.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-03.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-04.jpg",
+        "genre": "photo"
+      }
+    ],
+    "couverture": "photo-01.jpg"
+  },
+  {
     "slug": "2026-09-cover-akira-anok",
     "titre": "Cover AKIRA - Anok",
     "date": "2026-09-29",
