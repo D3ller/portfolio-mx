@@ -1,0 +1,4 @@
+Fichiers attendus dans ce dossier :
+
+showreel.mp4 (1 min, 1080p) + showreel.jpg (image de secours)
+showreel-apercu.mp4 → extrait de 3-5 s pour la carte vidéo de l'accueil

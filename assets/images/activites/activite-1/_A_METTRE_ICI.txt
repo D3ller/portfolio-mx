@@ -1,0 +1,3 @@
+Fichiers attendus dans ce dossier :
+
+miniature.jpg  → vignette de la carte « Activité récente 1 » sur l'accueil

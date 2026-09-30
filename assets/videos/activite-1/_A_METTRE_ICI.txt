@@ -1,0 +1,3 @@
+Fichiers attendus dans ce dossier :
+
+video.mp4 + poster.jpg  (ou intègre YouTube/Vimeo : voir le commentaire dans activite-1.html)
