@@ -10,8 +10,6 @@
   /* ---------- Icônes (data-icon="nom") ---------- */
   const P = {
     instagram: '<rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/>',
-    tiktok: '<path d="M15 3v2.5A4.5 4.5 0 0 0 19.5 10v3A7.4 7.4 0 0 1 15 11.5V16a5.5 5.5 0 1 1-5.5-5.5v3A2.5 2.5 0 1 0 12 16V3z"/>',
-    pappers: '<path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-5h6v5M9 10h.01M15 10h.01"/>',
     mail: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
     phone: '<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>',
     "arrow-up-right": '<path d="M7 17 17 7M7 7h10v10"/>',
@@ -35,7 +33,7 @@
   function paintLinks() {
     const c = MX.contact || {};
     const map = {
-      instagram: c.instagram, tiktok: c.tiktok, pappers: c.pappers,
+      instagram: c.instagram,
       mail: c.email && "mailto:" + c.email, phone: c.telephone && "tel:" + c.telephone,
       cv: MX.cv
     };
@@ -226,6 +224,27 @@
         <div class="activity__txt"><span class="tag">${esc(tLabel(p))}</span><h3 class="heading-s">${esc(p.titre)}</h3><p class="muted">${esc(pDate(p.date))} · ${esc(p.role)}</p></div>
       </a>`;
   });
+
+  /* ---------- Page Tous les projets (photo + vidéo + motion + 3D, sans Simplicicar) ---------- */
+  const allGrid = $("#all-cards");
+  if (allGrid) {
+    const mine = PROJ.filter((p) => !/simplicicar/i.test(`${p.titre} ${p.categorie || ""}`));
+    filterButtons($("#all-filters"), [...new Set(mine.flatMap(pCats))], true);
+    $("#all-count").textContent = `${mine.length} PROJET${mine.length > 1 ? "S" : ""}`;
+    const nb = (p) => {
+      const ph = pCount(p, "photo"), vi = pCount(p, "video");
+      return [ph && `${ph} photo${ph > 1 ? "s" : ""}`, vi && `${vi} vidéo${vi > 1 ? "s" : ""}`, !vi && p.embed && "Vidéo"].filter(Boolean)
+        .map((t) => `<span class="tag tag--dark">${t}</span>`).join("");
+    };
+    allGrid.innerHTML = mine.map((p) => `
+      <a class="pcard" href="${pHref(p)}" data-cat="${pCatSlugs(p)}" data-recent="${RECENTS.has(p.slug) ? 1 : 0}">
+        <div class="media media--4x3">${pCover(p)}${hasVideo(p) && !hasPhoto(p) ? `<span class="play">${icon("play")}</span>` : ""}
+          <div class="overlay"><div style="display:flex;gap:6px;flex-wrap:wrap">${RECENTS.has(p.slug) ? '<span class="tag tag--accent">Récent</span>' : ""}<span class="tag tag--dark">${esc(tLabel(p))}</span>${nb(p)}</div></div>
+        </div>
+        <div class="pcard__meta"><div class="grow"><h3 class="heading-s">${esc(p.titre)}</h3><p class="muted">${esc(p.categorie ? p.categorie + " · " : "")}${esc(pDate(p.date))}</p></div>${icon("arrow-up-right")}</div>
+      </a>`).join("") || '<p class="muted">Aucun projet pour le moment.</p>';
+    bindFilters($("#all-filters"), allGrid);
+  }
 
   /* ---------- Page Réalisations Photos ---------- */
   const photoGrid = $("#photo-cards");

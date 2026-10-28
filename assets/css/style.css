@@ -375,6 +375,7 @@ a.card:hover, button.card:hover { border-color: var(--border-strong); }
 }
 .filter[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: transparent; }
 .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 16px; }
+.cards--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .pcard { display: flex; flex-direction: column; gap: 14px; text-align: left; background: none; border: 0; padding: 0; cursor: pointer; }
 .pcard .media { border-radius: 20px; }
 .pcard__meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 0 4px; }
@@ -464,6 +465,7 @@ a.person:hover { border-color: var(--accent); }
   .contact__intro { position: static; }
   .grid-5, .grid-6, .grid-7 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cards--4 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .meta { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 720px) {

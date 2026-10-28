@@ -100,7 +100,7 @@ Garde des noms **en minuscules, sans espace ni accent** (`drone-troyes`, pas `Dr
 
 ## Tes coordonnées
 
-Tout est dans `assets/js/data.js` → `contact` (e-mail, téléphone, Instagram, TikTok, Pappers).
+Tout est dans `assets/js/data.js` → `contact` (e-mail, téléphone, Instagram).
 Le formulaire ouvre la messagerie du visiteur avec la demande pré-remplie vers ton e-mail.
 Pour recevoir les demandes sans passer par sa messagerie, crée un formulaire gratuit sur Formspree et je pourrai le brancher.
 

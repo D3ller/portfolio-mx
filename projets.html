@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tous les projets — MX Flash</title>
+  <meta name="description" content="Tous les projets de MX Flash : photo, vidéo, motion design et 3D, du plus récent au plus ancien.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Geist:wght@400;500&family=Geist+Mono&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="btn" href="index.html"><span data-icon="arrow-left"></span>Retour à l’accueil</a>
+  <span class="mono nav__label">MX Flash — Projets</span>
+  <a class="btn btn--accent" href="contact.html">Parlons de votre projet</a>
+</header>
+
+<main>
+  <div class="project-head" style="padding-bottom:32px">
+    <div class="section__head" style="margin:0">
+      <div><span class="mono accent kicker">Photo · Vidéo · Motion · 3D</span><h1 class="display-xl">Tous les projets</h1></div>
+      <span class="mono muted" id="all-count"></span>
+    </div>
+    <div class="filters" id="all-filters" role="group" aria-label="Filtrer par catégorie"></div>
+  </div>
+  <!-- Tous les projets de l admin (assets/js/projets.js), du plus récent au plus ancien — hors Simplicicar -->
+  <div class="cards cards--4" id="all-cards" style="padding:16px var(--gutter) 96px"></div>
+</main>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/projets.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -23,11 +23,11 @@
     "liens": [],
     "medias": [
       {
-        "nom": "photo-01.jpg",
+        "nom": "photo-02.jpg",
         "genre": "photo"
       },
       {
-        "nom": "photo-02.jpg",
+        "nom": "photo-01.jpg",
         "genre": "photo"
       },
       {
@@ -55,7 +55,7 @@
         "genre": "photo"
       }
     ],
-    "couverture": "photo-01.jpg"
+    "couverture": "photo-02.jpg"
   },
   {
     "slug": "2026-09-galettes-st-michel",
@@ -220,6 +220,79 @@
     ]
   },
   {
+    "slug": "2025-11-gala-de-boxe",
+    "titre": "Gala de Boxe",
+    "types": [
+      "photo"
+    ],
+    "date": "2025-11-15",
+    "role": "Retouche · Prise de vue",
+    "categorie": "Evenement",
+    "description": "Le 15 novembre 2025, j’ai couvert en photo le gala de boxe organisé par le Stade Troyen à la salle omnisport de Troyes. J’avais un accès complet à l’événement et j’ai suivi toute la soirée, des vestiaires au ring.\n\nL’objectif était de mettre en avant les boxeurs du Stade Troyen et leurs adversaires. En post-production, j’ai choisi des tons froids et j’ai accentué l’éclairage pour renforcer l’intensité des combats et rendre chaque image imposante.",
+    "logiciels": [
+      "Lightroom"
+    ],
+    "embed": "",
+    "personnes": [
+      {
+        "nom": "Raphaël Monny",
+        "role": "Boxeur",
+        "instagram": "raphael_monny"
+      },
+      {
+        "nom": "Loris Nié",
+        "role": "Boxeur",
+        "instagram": "l0r1s._l"
+      },
+      {
+        "nom": "Noham",
+        "role": "Boxeur",
+        "instagram": "el.tiburon.204"
+      },
+      {
+        "nom": "Théo Hennequin",
+        "role": "Boxeur",
+        "instagram": "theo__hennequin"
+      }
+    ],
+    "liens": [],
+    "medias": [
+      {
+        "nom": "photo-01.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-03.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-08-2.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-04.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-05.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-06.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-07.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-08.jpg",
+        "genre": "photo"
+      }
+    ],
+    "couverture": "photo-01.jpg"
+  },
+  {
     "slug": "2025-11-urbex-mais",
     "titre": "Urbex Maïs",
     "types": [
@@ -247,23 +320,11 @@
         "genre": "photo"
       },
       {
-        "nom": "photo-02.jpg",
-        "genre": "photo"
-      },
-      {
         "nom": "photo-03.jpg",
         "genre": "photo"
       },
       {
-        "nom": "photo-04.jpg",
-        "genre": "photo"
-      },
-      {
-        "nom": "photo-05.jpg",
-        "genre": "photo"
-      },
-      {
-        "nom": "photo-06.jpg",
+        "nom": "photo-02.jpg",
         "genre": "photo"
       },
       {
@@ -272,6 +333,14 @@
       },
       {
         "nom": "photo-08.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-05.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-06.jpg",
         "genre": "photo"
       },
       {
@@ -377,6 +446,48 @@
         "nom": "photo-01.jpg",
         "genre": "photo",
         "cache": true
+      }
+    ],
+    "couverture": "photo-01.jpg"
+  },
+  {
+    "slug": "2025-09-partynextdoor",
+    "titre": "PartyNextDoor",
+    "types": [
+      "photo"
+    ],
+    "date": "2025-09-24",
+    "role": "Prise de vue · Direction artistique · Retouche",
+    "categorie": "Portrait",
+    "description": "........................",
+    "logiciels": [
+      "Lightroom"
+    ],
+    "embed": "",
+    "personnes": [
+      {
+        "nom": "Mélissa",
+        "role": "Modèle",
+        "instagram": "cpn.777"
+      }
+    ],
+    "liens": [],
+    "medias": [
+      {
+        "nom": "photo-01.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-02.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-03.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-04.jpg",
+        "genre": "photo"
       }
     ],
     "couverture": "photo-01.jpg"

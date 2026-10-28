@@ -7,13 +7,11 @@
 window.MX = {
   /* ---------- Coordonnées (icônes de l'accueil + page contact) ---------- */
   contact: {
-    email: "contact@mxflash.fr",              // ← ton adresse
-    telephone: "+33600000000",                // ← format international, sans espace
-    telephoneAffiche: "06 00 00 00 00",       // ← comme tu veux l'afficher
-    instagram: "https://www.instagram.com/TON_COMPTE",
-    tiktok: "https://www.tiktok.com/@TON_COMPTE",
-    pappers: "https://www.pappers.fr/entreprise/TON_ENTREPRISE",
-    instagramAffiche: "@mxflash"
+    email: "maxence.ballotwrobel@free.fr",    // ← ton adresse
+    telephone: "+33766916414",                // ← format international, sans espace
+    telephoneAffiche: "07 66 91 64 14",       // ← comme tu veux l'afficher
+    instagram: "https://www.instagram.com/mx_.flash/",
+    instagramAffiche: "@mx_.flash"
   },
 
   /* ---------- CV (bouton « Télécharger mon CV ») ---------- */
