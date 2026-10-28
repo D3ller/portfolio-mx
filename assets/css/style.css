@@ -408,7 +408,11 @@ a.card:hover, button.card:hover { border-color: var(--border-strong); }
 /* Vidéo hors 16:9 (1:1, 9:16, 4:5…) : format d'origine, centrée, jamais recadrée */
 .player--native { width: min(100%, calc(85vh * var(--r, 1))); margin: 0 auto; background: #000; }
 .player--native > video { object-fit: contain; }
-.masonry { columns: 3 320px; column-gap: 16px; }
+/* 4 photos par ligne sur ordinateur, 3 sur tablette, 2 puis 1 sur mobile */
+.masonry { columns: 4; column-gap: 16px; }
+@media (max-width: 1180px) { .masonry { columns: 3; } }
+@media (max-width: 720px) { .masonry { columns: 2; } }
+@media (max-width: 420px) { .masonry { columns: 1; } }
 .masonry .media { display: block; margin: 0 0 16px; break-inside: avoid; border-radius: 16px; cursor: zoom-in; min-height: 200px; }
 .masonry .media > img { position: relative; height: auto; }
 .masonry .media:has(> img) { min-height: 0; }

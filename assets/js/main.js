@@ -219,7 +219,7 @@
 
   // Accueil : les 3 projets les plus récents remplacent les cartes d'exemple
   $$("[data-recent-slot]").forEach((slot, i) => {
-    const p = PROJ[i]; if (!p) return;
+    const p = PROJ[i]; if (!p) { slot.remove(); return; } // pas assez de projets : pas de carte vide
     slot.outerHTML = `
       <a class="card activity" href="${pHref(p)}">
         <div class="media">${pCover(p)}${hasVideo(p) && !hasPhoto(p) ? `<span class="play">${icon("play")}</span>` : ""}</div>
@@ -312,6 +312,7 @@
     const render = (f, big) => f.p
       ? `<a class="pcard${big ? " big" : ""}" href="${pHref(f.p)}"${big ? "" : ' style="height:100%"'}>${mThumb(f.p, big ? "big" : "", big ? bigInner(f.p.categorie || tLabel(f.p), pDuree(f.p), f.p.titre, f.p.role) : sideInner(RECENTS.has(f.p.slug) ? "Récent" : f.p.categorie || tLabel(f.p), pDuree(f.p), f.p.titre, true), big ? "" : fullH)}</a>`
       : `<button type="button" class="pcard${big ? " big" : ""}" data-v="${MX.videos.indexOf(f.v)}"${big ? "" : ' style="height:100%"'}>${thumb(f.v, big ? "big" : "", big ? bigInner(f.v.categorie, f.v.duree, f.v.titre, f.v.role) : sideInner(f.v.recent && !PROJ.length ? "Récent" : f.v.categorie, f.v.duree, f.v.titre, !!f.v.page)).replace('class="media "', 'class="media"' + fullH)}</button>`;
+    if (feat && !feats.length) { const s = $("#featured"); if (s) s.remove(); }
     if (feat && feats.length) {
       feat.innerHTML = render(feats[0], true) + `<div class="stack">${feats.slice(1).map((f) => render(f, false)).join("")}</div>`;
       feat.addEventListener("click", (e) => { const c = e.target.closest("[data-v]"); if (c) open(MX.videos[c.dataset.v]); });
@@ -319,7 +320,9 @@
 
     // Reels 9:16
     const reels = $("#reels");
-    if (reels && MX.reels) {
+    // pas de reels : on masque toute la section « Formats verticaux »
+    if (reels && !(MX.reels || []).length) { const sec = reels.closest("section"); if (sec) sec.remove(); }
+    if (reels && MX.reels && MX.reels.length) {
       reels.innerHTML = MX.reels.map((r, i) => reelCard({ ...r, apercu: false }, "assets/videos/reels/", `data-r="${i}"`)).join("");
       reels.addEventListener("click", (e) => {
         const c = e.target.closest("[data-r]"); if (!c) return; const r = MX.reels[c.dataset.r];

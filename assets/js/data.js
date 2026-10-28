@@ -25,13 +25,8 @@ window.MX = {
      - 01.jpg, 02.jpg …   → les photos (le nombre = "nbPhotos")
      recent: true         → apparaît aussi dans « Activités récentes »          */
   photos: [
-    { dossier: "activite-2",      titre: "Activité récente 2",      categorie: "Série",          nbPhotos: 5, recent: true },
-    { dossier: "activite-3",      titre: "Activité récente 3",      categorie: "Reportage",      nbPhotos: 5, recent: true },
-    { dossier: "simplicicar",     titre: "Simplicicar — Véhicules", categorie: "Automobile",     nbPhotos: 7 },
-    { dossier: "portrait",        titre: "Projet portrait",         categorie: "Portrait",       nbPhotos: 6 },
-    { dossier: "evenement",       titre: "Projet événement",        categorie: "Événement",      nbPhotos: 6 },
-    { dossier: "argentique",      titre: "Série argentique",        categorie: "Argentique",     nbPhotos: 6 },
-    { dossier: "drone-troyes",    titre: "Troyes vue du ciel",      categorie: "Drone",          nbPhotos: 6 }
+    // Le plus simple : ajoute tes projets avec l'admin. Format manuel :
+    // { dossier: "mon-projet", titre: "Mon projet", categorie: "Portrait", nbPhotos: 12 },
   ],
 
   /* ---------- Réalisations Vidéos ----------
@@ -43,25 +38,15 @@ window.MX = {
             ou "https://www.youtube.com/embed/XXXXXXXXXXX"
      page: lien vers une page « process » (facultatif)                       */
   videos: [
-    { dossier: "activite-1",   titre: "Activité récente 1",     categorie: "Clip",          role: "Réalisation · Montage",     duree: "2:30", recent: true, alaune: true, page: "activite-1.html" },
-    { dossier: "simplicicar",  titre: "Simplicicar Troyes",     categorie: "Automobile",    role: "Tournage · Montage",        duree: "0:45", alaune: true, page: "simplicicar.html" },
-    { dossier: "clip",         titre: "Projet clip",            categorie: "Clip",          role: "Réalisation · Montage",     duree: "3:12", phare: true },
-    { dossier: "aftermovie",   titre: "Projet aftermovie",      categorie: "Aftermovie",    role: "Cadre · Montage",           duree: "1:58" },
-    { dossier: "publicite",    titre: "Projet publicité",       categorie: "Publicité",     role: "Réalisation · Étalonnage",  duree: "0:30" },
-    { dossier: "drone-troyes", titre: "Troyes vue du ciel",     categorie: "Drone",         role: "Pilotage · Montage",        duree: "1:20" },
-    { dossier: "motion",       titre: "Projet motion",          categorie: "Motion design", role: "After Effects",             duree: "0:40" }
+    // Le plus simple : ajoute tes projets avec l'admin. Format manuel :
+    // { dossier: "mon-film", titre: "Mon film", categorie: "Clip", role: "Réalisation", duree: "2:30" },
   ],
 
   /* ---------- Formats verticaux 9:16 (reels) ----------
      Dossier : assets/videos/reels/
      - 01.mp4, 02.mp4 …  + 01.jpg, 02.jpg … (vignettes)                      */
   reels: [
-    { fichier: "01", titre: "Reel Simplicicar", duree: "0:32" },
-    { fichier: "02", titre: "Reel clip",        duree: "0:24" },
-    { fichier: "03", titre: "Aftermovie court", duree: "0:45" },
-    { fichier: "04", titre: "Reel drone",       duree: "0:18" },
-    { fichier: "05", titre: "Reel coulisses",   duree: "0:28" },
-    { fichier: "06", titre: "Reel pub",         duree: "0:15" }
+    // { fichier: "01", titre: "Mon reel", duree: "0:30" }  ou  { instagram: "https://www.instagram.com/reel/…", titre: "…" }
   ],
   /* Un reel peut aussi venir d'Instagram (pas besoin du fichier) :
      { instagram: "https://www.instagram.com/reel/XXXXXXXXX/", titre: "Mon reel", vignette: "assets/videos/reels/07.jpg" } */
