@@ -1,6 +1,64 @@
 /* Généré automatiquement par l'admin (_admin/server.js) — ne pas modifier à la main. */
 window.MX_PROJETS = [
   {
+    "slug": "2026-10-long-time-no-see",
+    "titre": "Long time no see",
+    "types": [
+      "photo"
+    ],
+    "date": "2026-10-22",
+    "role": "Prise de vue · Étalonnage · Retouche · Direction artistique - Lumières",
+    "categorie": "Portrait",
+    "description": "Shooting dans un studio photo. Mise en place de différents éclairages, conseils de poses au modèle puis retouche photo sur lightroom.",
+    "logiciels": [
+      "Lightroom"
+    ],
+    "embed": "",
+    "personnes": [
+      {
+        "nom": "Arthur",
+        "role": "Modèle",
+        "instagram": "arthur.clrk"
+      }
+    ],
+    "liens": [],
+    "medias": [
+      {
+        "nom": "photo-01.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-02.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-03.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-04.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-05.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-06.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-07.jpg",
+        "genre": "photo"
+      },
+      {
+        "nom": "photo-08.jpg",
+        "genre": "photo"
+      }
+    ],
+    "couverture": "photo-01.jpg"
+  },
+  {
     "slug": "2026-09-galettes-st-michel",
     "titre": "Galettes St Michel",
     "types": [
@@ -36,6 +94,9 @@ window.MX_PROJETS = [
   {
     "slug": "2026-09-cover-akira-anok",
     "titre": "Cover AKIRA - Anok",
+    "types": [
+      "photo"
+    ],
     "date": "2026-09-29",
     "role": "Prise de vue · Retouche",
     "categorie": "Design Graphique",
@@ -47,12 +108,17 @@ window.MX_PROJETS = [
     "embed": "",
     "personnes": [
       {
-        "nom": "Aloïs",
+        "nom": "Anok",
         "role": "Modèle et Artiste",
         "instagram": "__an0k__"
       }
     ],
-    "liens": [],
+    "liens": [
+      {
+        "texte": "Voir le clip sur youtube",
+        "url": "https://www.youtube.com/watch?v=igf_xetzHyo"
+      }
+    ],
     "medias": [
       {
         "nom": "photo-01.jpg",
@@ -71,10 +137,7 @@ window.MX_PROJETS = [
         "genre": "photo"
       }
     ],
-    "couverture": "photo-01.jpg",
-    "types": [
-      "photo"
-    ]
+    "couverture": "photo-01.jpg"
   },
   {
     "slug": "2026-09-lego-moi-meme",
